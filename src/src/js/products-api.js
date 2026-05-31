@@ -18,7 +18,6 @@ export async function getProductById(id) {
 
 export async function getCategories() {
   const { data } = await axios(`${API_ENDPOINTS.CATEGORIES}`);
-  console.log("Категорії з API:", data);
   return data;
 }
 
